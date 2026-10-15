@@ -1,0 +1,37 @@
+# Regla global para todos los motores de búsqueda tradicionales (Google, Bing, etc.)
+User-agent: *
+Allow: /
+
+# Permiso explícito para Google AI Overviews y ecosistema Gemini
+User-agent: Googlebot
+Allow: /
+
+User-agent: Google-Extended
+Allow: /
+
+# Permiso explícito para OpenAI (ChatGPT Search y GPTBot)
+User-agent: OAI-SearchBot
+Allow: /
+
+User-agent: ChatGPT-User
+Allow: /
+
+User-agent: GPTBot
+Allow: /
+
+# Permiso explícito para Perplexity AI
+User-agent: PerplexityBot
+Allow: /
+
+# Permiso explícito para Anthropic (Claude) y Apple Intelligence
+User-agent: ClaudeBot
+Allow: /
+
+User-agent: anthropic-ai
+Allow: /
+
+User-agent: Applebot-Extended
+Allow: /
+
+# Ruta exacta del Sitemap en tu proyecto de GitHub Pages
+Sitemap: https://asistenciasyseguros1-droid.github.io/asistencias-segurosweb/sitemap.xml
