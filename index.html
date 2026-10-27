@@ -1,0 +1,1034 @@
+<!DOCTYPE html>
+<html lang="es">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <meta name="description" content="Asistencias y Seguros en Barquisimeto - Agencia líder en seguros de viaje, salud internacional y vida con reintegro. Cuatro décadas protegiendo familias en el centro occidente de Venezuela. Cotiza tu seguro de viaje online.">
+    <meta name="keywords" content="seguros de viaje Barquisimeto, asistencia en viajes Venezuela, seguro médico internacional, seguro de vida con reintegro, Asistencias y Seguros, New Travel Assistance, seguros centro occidente">
+    <meta name="author" content="Asistencias y Seguros">
+    <meta name="robots" content="index, follow">
+    
+    <!-- Open Graph para redes sociales -->
+    <meta property="og:title" content="Asistencias y Seguros | Tu Agencia de Confianza en Barquisimeto">
+    <meta property="og:description" content="Protegemos tus viajes, tu salud y el futuro de tu familia. Expertos en seguros de viaje, salud internacional y vida con reintegro de prima.">
+    <meta property="og:type" content="website">
+    <meta property="og:url" content="https://asistenciasyseguros.com">
+    <meta property="og:image" content="https://asistenciasyseguros.com/images/og-image.jpg">
+    
+    <title>Asistencias y Seguros | Agencia de Seguros de Viaje y Personales en Barquisimeto</title>
+    
+    <style>
+        :root {
+            --azul-principal: #1e3a8a;
+            --azul-oscuro: #1e40af;
+            --azul-claro: #3b82f6;
+            --amarillo: #fbbf24;
+            --amarillo-oscuro: #f59e0b;
+            --blanco: #ffffff;
+            --gris-claro: #f3f4f6;
+            --gris-oscuro: #374151;
+            --texto: #1f2937;
+        }
+        
+        * {
+            margin: 0;
+            padding: 0;
+            box-sizing: border-box;
+        }
+        
+        body {
+            font-family: 'Segoe UI', Tahoma, Geneva, Verdana, sans-serif;
+            line-height: 1.6;
+            color: var(--texto);
+            overflow-x: hidden;
+        }
+        
+        /* Navegación */
+        nav {
+            background: linear-gradient(135deg, var(--azul-principal) 0%, var(--azul-oscuro) 100%);
+            padding: 1rem 0;
+            position: fixed;
+            width: 100%;
+            top: 0;
+            z-index: 1000;
+            box-shadow: 0 2px 10px rgba(0,0,0,0.1);
+        }
+        
+        .nav-container {
+            max-width: 1200px;
+            margin: 0 auto;
+            padding: 0 2rem;
+            display: flex;
+            justify-content: space-between;
+            align-items: center;
+        }
+        
+        .logo {
+            display: flex;
+            align-items: center;
+            gap: 1rem;
+        }
+        
+        .logo img {
+            height: 60px;
+            width: auto;
+        }
+        
+        .logo-text {
+            color: var(--blanco);
+            font-size: 1.5rem;
+            font-weight: bold;
+        }
+        
+        .logo-tagline {
+            color: var(--amarillo);
+            font-size: 0.85rem;
+            display: block;
+        }
+        
+        .nav-links {
+            display: flex;
+            gap: 2rem;
+            list-style: none;
+            align-items: center;
+        }
+        
+        .nav-links a {
+            color: var(--blanco);
+            text-decoration: none;
+            font-weight: 500;
+            transition: color 0.3s;
+        }
+        
+        .nav-links a:hover {
+            color: var(--amarillo);
+        }
+        
+        .btn-cotizar-nav {
+            background-color: var(--amarillo);
+            color: var(--azul-principal) !important;
+            padding: 0.5rem 1.5rem;
+            border-radius: 25px;
+            font-weight: bold;
+            transition: transform 0.3s, box-shadow 0.3s;
+        }
+        
+        .btn-cotizar-nav:hover {
+            transform: translateY(-2px);
+            box-shadow: 0 4px 12px rgba(251, 191, 36, 0.4);
+        }
+        
+        /* Hero Section */
+        .hero {
+            margin-top: 80px;
+            background: linear-gradient(135deg, var(--azul-principal) 0%, var(--azul-oscuro) 50%, var(--azul-claro) 100%);
+            color: var(--blanco);
+            padding: 4rem 2rem;
+            position: relative;
+            overflow: hidden;
+        }
+        
+        .hero::before {
+            content: '';
+            position: absolute;
+            top: 0;
+            left: 0;
+            right: 0;
+            bottom: 0;
+            background: url('data:image/svg+xml,<svg xmlns="http://www.w3.org/2000/svg" viewBox="0 0 1440 320"><path fill="%23fbbf24" fill-opacity="0.1" d="M0,96L48,112C96,128,192,160,288,160C384,160,480,128,576,112C672,96,768,96,864,112C960,128,1056,160,1152,160C1248,160,1344,128,1392,112L1440,96L1440,320L1392,320C1344,320,1248,320,1152,320C1056,320,960,320,864,320C768,320,672,320,576,320C480,320,384,320,288,320C192,320,96,320,48,320L0,320Z"></path></svg>') no-repeat bottom;
+            background-size: cover;
+            opacity: 0.3;
+        }
+        
+        .hero-container {
+            max-width: 1200px;
+            margin: 0 auto;
+            display: grid;
+            grid-template-columns: 1fr 1fr;
+            gap: 4rem;
+            align-items: center;
+            position: relative;
+            z-index: 1;
+        }
+        
+        .hero-content h1 {
+            font-size: 3rem;
+            margin-bottom: 1.5rem;
+            line-height: 1.2;
+            text-shadow: 2px 2px 4px rgba(0,0,0,0.2);
+        }
+        
+        .hero-content h1 span {
+            color: var(--amarillo);
+        }
+        
+        .hero-content p {
+            font-size: 1.25rem;
+            margin-bottom: 2rem;
+            line-height: 1.8;
+        }
+        
+        .hero-buttons {
+            display: flex;
+            gap: 1rem;
+            flex-wrap: wrap;
+        }
+        
+        .btn-primary {
+            background-color: var(--amarillo);
+            color: var(--azul-principal);
+            padding: 1rem 2rem;
+            border-radius: 30px;
+            text-decoration: none;
+            font-weight: bold;
+            font-size: 1.1rem;
+            display: inline-flex;
+            align-items: center;
+            gap: 0.5rem;
+            transition: all 0.3s;
+            box-shadow: 0 4px 15px rgba(251, 191, 36, 0.3);
+        }
+        
+        .btn-primary:hover {
+            transform: translateY(-3px);
+            box-shadow: 0 6px 20px rgba(251, 191, 36, 0.4);
+            background-color: var(--amarillo-oscuro);
+        }
+        
+        .btn-secondary {
+            background-color: transparent;
+            color: var(--blanco);
+            padding: 1rem 2rem;
+            border-radius: 30px;
+            text-decoration: none;
+            font-weight: bold;
+            font-size: 1.1rem;
+            border: 2px solid var(--blanco);
+            display: inline-flex;
+            align-items: center;
+            gap: 0.5rem;
+            transition: all 0.3s;
+        }
+        
+        .btn-secondary:hover {
+            background-color: var(--blanco);
+            color: var(--azul-principal);
+        }
+        
+        .hero-image {
+            position: relative;
+        }
+        
+        .hero-image img {
+            width: 100%;
+            height: auto;
+            border-radius: 20px;
+            box-shadow: 0 20px 60px rgba(0,0,0,0.3);
+        }
+        
+        .hero-badge {
+            position: absolute;
+            bottom: -20px;
+            left: -20px;
+            background-color: var(--amarillo);
+            color: var(--azul-principal);
+            padding: 1.5rem;
+            border-radius: 15px;
+            font-weight: bold;
+            box-shadow: 0 10px 30px rgba(0,0,0,0.2);
+        }
+        
+        .hero-badge span {
+            display: block;
+            font-size: 2rem;
+            line-height: 1;
+        }
+        
+        /* Sección de Productos */
+        .productos {
+            padding: 5rem 2rem;
+            background-color: var(--gris-claro);
+        }
+        
+        .container {
+            max-width: 1200px;
+            margin: 0 auto;
+        }
+        
+        .section-title {
+            text-align: center;
+            margin-bottom: 3rem;
+        }
+        
+        .section-title h2 {
+            color: var(--azul-principal);
+            font-size: 2.5rem;
+            margin-bottom: 1rem;
+        }
+        
+        .section-title p {
+            color: var(--gris-oscuro);
+            font-size: 1.2rem;
+            max-width: 800px;
+            margin: 0 auto;
+        }
+        
+        .productos-grid {
+            display: grid;
+            grid-template-columns: repeat(auto-fit, minmax(350px, 1fr));
+            gap: 2rem;
+            margin-top: 3rem;
+        }
+        
+        .producto-card {
+            background: var(--blanco);
+            border-radius: 20px;
+            padding: 2.5rem;
+            box-shadow: 0 10px 30px rgba(0,0,0,0.1);
+            transition: transform 0.3s, box-shadow 0.3s;
+            border-top: 5px solid var(--amarillo);
+        }
+        
+        .producto-card:hover {
+            transform: translateY(-10px);
+            box-shadow: 0 20px 40px rgba(0,0,0,0.15);
+        }
+        
+        .producto-icon {
+            width: 80px;
+            height: 80px;
+            background: linear-gradient(135deg, var(--azul-principal), var(--azul-claro));
+            border-radius: 50%;
+            display: flex;
+            align-items: center;
+            justify-content: center;
+            margin-bottom: 1.5rem;
+            font-size: 2.5rem;
+        }
+        
+        .producto-card h3 {
+            color: var(--azul-principal);
+            font-size: 1.5rem;
+            margin-bottom: 1rem;
+        }
+        
+        .producto-card p {
+            color: var(--gris-oscuro);
+            line-height: 1.8;
+            margin-bottom: 1.5rem;
+        }
+        
+        .producto-card ul {
+            list-style: none;
+            margin-bottom: 1.5rem;
+        }
+        
+        .producto-card ul li {
+            padding: 0.5rem 0;
+            padding-left: 1.5rem;
+            position: relative;
+        }
+        
+        .producto-card ul li::before {
+            content: '✓';
+            position: absolute;
+            left: 0;
+            color: var(--amarillo-oscuro);
+            font-weight: bold;
+        }
+        
+        /* Empresas Aliadas */
+        .empresas {
+            padding: 5rem 2rem;
+            background: linear-gradient(135deg, var(--azul-principal) 0%, var(--azul-oscuro) 100%);
+            color: var(--blanco);
+        }
+        
+        .empresas .section-title h2 {
+            color: var(--blanco);
+        }
+        
+        .empresas .section-title p {
+            color: var(--gris-claro);
+        }
+        
+        .empresas-grid {
+            display: grid;
+            grid-template-columns: repeat(auto-fit, minmax(250px, 1fr));
+            gap: 2rem;
+            margin-top: 3rem;
+        }
+        
+        .empresa-card {
+            background: rgba(255,255,255,0.1);
+            backdrop-filter: blur(10px);
+            border-radius: 15px;
+            padding: 2rem;
+            text-align: center;
+            transition: transform 0.3s, background 0.3s;
+            border: 2px solid rgba(251, 191, 36, 0.3);
+        }
+        
+        .empresa-card:hover {
+            transform: translateY(-5px);
+            background: rgba(255,255,255,0.2);
+            border-color: var(--amarillo);
+        }
+        
+        .empresa-card h3 {
+            color: var(--amarillo);
+            font-size: 1.3rem;
+            margin-bottom: 1rem;
+        }
+        
+        .empresa-card a {
+            display: inline-block;
+            margin-top: 1rem;
+            padding: 0.75rem 1.5rem;
+            background-color: var(--amarillo);
+            color: var(--azul-principal);
+            text-decoration: none;
+            border-radius: 25px;
+            font-weight: bold;
+            transition: all 0.3s;
+        }
+        
+        .empresa-card a:hover {
+            background-color: var(--amarillo-oscuro);
+            transform: scale(1.05);
+        }
+        
+        /* FAQ Section - NO desplegable */
+        .faq {
+            padding: 5rem 2rem;
+            background-color: var(--blanco);
+        }
+        
+        .faq-container {
+            max-width: 900px;
+            margin: 0 auto;
+        }
+        
+        .faq-item {
+            background-color: var(--gris-claro);
+            border-radius: 10px;
+            padding: 2rem;
+            margin-bottom: 1.5rem;
+            border-left: 5px solid var(--amarillo);
+        }
+        
+        .faq-item h3 {
+            color: var(--azul-principal);
+            font-size: 1.3rem;
+            margin-bottom: 1rem;
+        }
+        
+        .faq-item p {
+            color: var(--gris-oscuro);
+            line-height: 1.8;
+        }
+        
+        /* Reclutamiento */
+        .reclutamiento {
+            padding: 5rem 2rem;
+            background: linear-gradient(135deg, var(--amarillo) 0%, var(--amarillo-oscuro) 100%);
+        }
+        
+        .reclutamiento .section-title h2 {
+            color: var(--azul-principal);
+        }
+        
+        .reclutamiento .section-title p {
+            color: var(--texto);
+        }
+        
+        .formulario-container {
+            max-width: 700px;
+            margin: 3rem auto;
+            background: var(--blanco);
+            padding: 3rem;
+            border-radius: 20px;
+            box-shadow: 0 20px 60px rgba(0,0,0,0.2);
+        }
+        
+        .form-group {
+            margin-bottom: 1.5rem;
+        }
+        
+        .form-group label {
+            display: block;
+            color: var(--azul-principal);
+            font-weight: bold;
+            margin-bottom: 0.5rem;
+        }
+        
+        .form-group input,
+        .form-group textarea,
+        .form-group select {
+            width: 100%;
+            padding: 1rem;
+            border: 2px solid var(--gris-claro);
+            border-radius: 10px;
+            font-size: 1rem;
+            transition: border-color 0.3s;
+        }
+        
+        .form-group input:focus,
+        .form-group textarea:focus,
+        .form-group select:focus {
+            outline: none;
+            border-color: var(--azul-claro);
+        }
+        
+        .btn-submit {
+            width: 100%;
+            padding: 1.2rem;
+            background-color: var(--azul-principal);
+            color: var(--blanco);
+            border: none;
+            border-radius: 10px;
+            font-size: 1.1rem;
+            font-weight: bold;
+            cursor: pointer;
+            transition: all 0.3s;
+        }
+        
+        .btn-submit:hover {
+            background-color: var(--azul-oscuro);
+            transform: translateY(-2px);
+            box-shadow: 0 5px 15px rgba(30, 58, 138, 0.3);
+        }
+        
+        /* WhatsApp Float Button */
+        .whatsapp-float {
+            position: fixed;
+            bottom: 30px;
+            right: 30px;
+            background-color: #25d366;
+            color: var(--blanco);
+            width: 60px;
+            height: 60px;
+            border-radius: 50%;
+            text-align: center;
+            font-size: 30px;
+            box-shadow: 0 4px 12px rgba(0,0,0,0.3);
+            z-index: 100;
+            display: flex;
+            align-items: center;
+            justify-content: center;
+            text-decoration: none;
+            transition: transform 0.3s;
+        }
+        
+        .whatsapp-float:hover {
+            transform: scale(1.1);
+        }
+        
+        /* Footer */
+        footer {
+            background-color: var(--azul-principal);
+            color: var(--blanco);
+            padding: 4rem 2rem 2rem;
+        }
+        
+        .footer-container {
+            max-width: 1200px;
+            margin: 0 auto;
+            display: grid;
+            grid-template-columns: repeat(auto-fit, minmax(250px, 1fr));
+            gap: 3rem;
+            margin-bottom: 3rem;
+        }
+        
+        .footer-section h3 {
+            color: var(--amarillo);
+            margin-bottom: 1.5rem;
+            font-size: 1.3rem;
+        }
+        
+        .footer-section p,
+        .footer-section a {
+            color: var(--gris-claro);
+            text-decoration: none;
+            line-height: 2;
+            display: block;
+            transition: color 0.3s;
+        }
+        
+        .footer-section a:hover {
+            color: var(--amarillo);
+        }
+        
+        .footer-section ul {
+            list-style: none;
+        }
+        
+        .social-links {
+            display: flex;
+            gap: 1rem;
+            margin-top: 1rem;
+        }
+        
+        .social-links a {
+            width: 40px;
+            height: 40px;
+            background-color: rgba(255,255,255,0.1);
+            border-radius: 50%;
+            display: flex;
+            align-items: center;
+            justify-content: center;
+            transition: all 0.3s;
+        }
+        
+        .social-links a:hover {
+            background-color: var(--amarillo);
+            transform: translateY(-3px);
+        }
+        
+        .footer-bottom {
+            text-align: center;
+            padding-top: 2rem;
+            border-top: 1px solid rgba(255,255,255,0.1);
+            color: var(--gris-claro);
+        }
+        
+        /* Responsive */
+        @media (max-width: 768px) {
+            .nav-links {
+                display: none;
+            }
+            
+            .hero-container {
+                grid-template-columns: 1fr;
+                gap: 2rem;
+            }
+            
+            .hero-content h1 {
+                font-size: 2rem;
+            }
+            
+            .productos-grid {
+                grid-template-columns: 1fr;
+            }
+            
+            .hero-badge {
+                position: relative;
+                bottom: auto;
+                left: auto;
+                margin-top: 2rem;
+            }
+        }
+        
+        /* Schema.org markup hidden */
+        .schema-markup {
+            display: none;
+        }
+    </style>
+</head>
+<body>
+
+    <!-- Navegación -->
+    <nav>
+        <div class="nav-container">
+            <div class="logo">
+                <img src="logo.png" alt="Asistencias y Seguros - Logo oficial de la agencia de seguros en Barquisimeto">
+                <div>
+                    <div class="logo-text">Asistencias y Seguros</div>
+                    <span class="logo-tagline">Siéntete bien asistido</span>
+                </div>
+            </div>
+            <ul class="nav-links">
+                <li><a href="#inicio">Inicio</a></li>
+                <li><a href="#productos">Productos</a></li>
+                <li><a href="#empresas">Empresas</a></li>
+                <li><a href="#faq">Preguntas Frecuentes</a></li>
+                <li><a href="#reclutamiento">Trabaja con Nosotros</a></li>
+                <li><a href="https://newtravelassistance.page/A343799" target="_blank" rel="noopener noreferrer" class="btn-cotizar-nav">Cotizar Seguro de Viaje</a></li>
+            </ul>
+        </div>
+    </nav>
+
+    <!-- Hero Section -->
+    <section class="hero" id="inicio">
+        <div class="hero-container">
+            <div class="hero-content">
+                <h1>Tu Agencia de Seguros de Confianza en <span>Barquisimeto</span> y el Centro Occidente</h1>
+                <p>Con más de cuatro décadas de experiencia, en Asistencias y Seguros protegemos lo que más importa: tus viajes, tu salud y el futuro financiero de tu familia. Somos la agencia referente en seguros de viaje, salud internacional y vida con reintegro de prima en Lara y toda la región centro occidental de Venezuela.</p>
+                <p>Ofrecemos asesoría personalizada, coberturas globales y el respaldo de las mejores compañías aseguradoras internacionales para que viajes tranquilo, vivas seguro y construyas libertad financiera.</p>
+                <div class="hero-buttons">
+                    <a href="https://newtravelassistance.page/A343799" target="_blank" rel="noopener noreferrer" class="btn-primary">
+                        🚀 Cotizar Seguro de Viaje Ahora
+                    </a>
+                    <a href="https://wa.me/584222747836" target="_blank" rel="noopener noreferrer" class="btn-secondary">
+                         Hablar por WhatsApp
+                    </a>
+                </div>
+            </div>
+            <div class="hero-image">
+                <img src="hero-image.jpg" alt="Familia venezolana viajando protegida con seguro de viaje y asistencia internacional - Asistencias y Seguros Barquisimeto">
+                <div class="hero-badge">
+                    <span>40+</span>
+                    Años de Experiencia
+                </div>
+            </div>
+        </div>
+    </section>
+
+    <!-- Productos -->
+    <section class="productos" id="productos">
+        <div class="container">
+            <div class="section-title">
+                <h2>Nuestros Productos de Seguros y Asistencias</h2>
+                <p>Ofrecemos soluciones integrales de protección diseñadas para cada etapa de tu vida, con coberturas que se adaptan a tus necesidades y las mejores condiciones del mercado asegurador venezolano e internacional.</p>
+            </div>
+            
+            <div class="productos-grid">
+                <!-- Seguro de Viaje -->
+                <article class="producto-card">
+                    <div class="producto-icon">✈️</div>
+                    <h3>Seguros de Viaje y Asistencia en Viajes</h3>
+                    <p>Viaja por el mundo con total tranquilidad. Nuestros planes de asistencia en viajes te brindan cobertura médica internacional, asistencia legal, pérdida de equipaje y mucho más, las 24 horas del día, los 7 días de la semana, estés donde estés.</p>
+                    <ul>
+                        <li>Cobertura médica internacional amplia</li>
+                        <li>Asistencia 24/7 en español</li>
+                        <li>Cobertura de enfermedades preexistentes</li>
+                        <li>Protección para deportes extremos</li>
+                        <li>Asistencia legal y documental</li>
+                        <li>Planes desde 1 día hasta 1 año</li>
+                    </ul>
+                    <a href="https://newtravelassistance.page/A343799" target="_blank" rel="noopener noreferrer" class="btn-primary" style="display: inline-block; text-align: center;">Cotizar Ahora</a>
+                </article>
+
+                <!-- Seguro de Salud Internacional -->
+                <article class="producto-card">
+                    <div class="producto-icon">🏥</div>
+                    <h3>Seguros de Salud Internacional</h3>
+                    <p>Para residentes venezolanos que exigen la mejor atención médica sin fronteras. Nuestros seguros de salud internacional te permiten acceder a las mejores clínicas y hospitales del mundo, con cobertura 100% UCR y redes médicas globales de primer nivel.</p>
+                    <ul>
+                        <li>Cobertura global en más de 150 países</li>
+                        <li>Acceso a las mejores clínicas internacionales</li>
+                        <li>Cobertura del 100% UCR</li>
+                        <li>Telemedicina internacional incluida</li>
+                        <li>Evacuación médica de emergencia</li>
+                        <li>Planes individuales y familiares</li>
+                    </ul>
+                    <a href="https://wa.me/584222747836" target="_blank" rel="noopener noreferrer" class="btn-primary" style="display: inline-block; text-align: center;">Solicitar Información</a>
+                </article>
+
+                <!-- Seguro de Vida -->
+                <article class="producto-card">
+                    <div class="producto-icon">💰</div>
+                    <h3>Seguros de Vida con Reintegro de Prima</h3>
+                    <p>Protege el futuro financiero de tu familia y recupera tu inversión. Nuestros seguros de vida a término con reintegro de primas o con opción de inversión te permiten construir patrimonio mientras garantizas la tranquilidad económica de tus seres queridos.</p>
+                    <ul>
+                        <li>Reintegro del 100% de primas al vencimiento</li>
+                        <li>Opción de inversión con rendimientos</li>
+                        <li>Camino a la libertad financiera</li>
+                        <li>Cobertura por fallecimiento y discapacidad</li>
+                        <li>Beneficios tributarios</li>
+                        <li>Planes flexibles según tus objetivos</li>
+                    </ul>
+                    <a href="https://wa.me/584222747836" target="_blank" rel="noopener noreferrer" class="btn-primary" style="display: inline-block; text-align: center;">Conocer Más</a>
+                </article>
+            </div>
+        </div>
+    </section>
+
+    <!-- Empresas Aliadas -->
+    <section class="empresas" id="empresas">
+        <div class="container">
+            <div class="section-title">
+                <h2>Empresas que Respaldan Nuestra Agencia</h2>
+                <p>Trabajamos con las compañías aseguradoras y de asistencia más prestigiosas del mercado internacional, garantizando el mejor servicio y las coberturas más completas para nuestros clientes en Barquisimeto y toda Venezuela.</p>
+            </div>
+            
+            <div class="empresas-grid">
+                <div class="empresa-card">
+                    <h3>REDBRIDGE INSURANCE</h3>
+                    <p>Compañía líder en seguros internacionales con amplia experiencia en el mercado global, ofreciendo soluciones innovadoras en seguros de vida, salud y propiedades.</p>
+                    <a href="https://www.redbridgeinsurance.com" target="_blank" rel="noopener noreferrer">Visitar Sitio Web</a>
+                </div>
+                
+                <div class="empresa-card">
+                    <h3>NEW TRAVEL ASISTANCE</h3>
+                    <p>Especialistas en asistencia en viajes con cobertura mundial, brindando soporte médico, legal y logístico las 24 horas para viajeros exigentes.</p>
+                    <a href="https://newtravelassistance.page" target="_blank" rel="noopener noreferrer">Visitar Sitio Web</a>
+                </div>
+                
+                <div class="empresa-card">
+                    <h3>OLE LIFE</h3>
+                    <p>Expertos en seguros de vida con opciones de inversión y reintegro de prima, ayudando a las familias a construir patrimonio y libertad financiera.</p>
+                    <a href="https://www.olelife.com" target="_blank" rel="noopener noreferrer">Visitar Sitio Web</a>
+                </div>
+                
+                <div class="empresa-card">
+                    <h3>BEST MERIDIAN INSURANCE</h3>
+                    <p>Corredora de seguros con enfoque en soluciones personalizadas de salud internacional y seguros de vida para clientes de alto patrimonio.</p>
+                    <a href="https://www.bestmeridianinsurance.com" target="_blank" rel="noopener noreferrer">Visitar Sitio Web</a>
+                </div>
+            </div>
+        </div>
+    </section>
+
+    <!-- FAQ Section - Visible directamente para SEO e IA -->
+    <section class="faq" id="faq">
+        <div class="faq-container">
+            <div class="section-title">
+                <h2>Preguntas Frecuentes sobre Nuestros Seguros</h2>
+                <p>Resolvemos tus dudas sobre seguros de viaje, salud internacional y vida con reintegro. Información clara y transparente para que tomes la mejor decisión.</p>
+            </div>
+            
+            <article class="faq-item">
+                <h3>¿Por qué necesito un seguro de viaje si voy a un país con buena medicina?</h3>
+                <p>Un seguro de viaje no solo cubre gastos médicos. Incluye asistencia legal, pérdida de equipaje, cancelación de vuelos, repatriación y soporte 24/7 en español. Además, en países como Estados Unidos, una simple consulta médica puede costar miles de dólares. Tu asistencia de viaje es tu red de seguridad integral.</p>
+            </article>
+            
+            <article class="faq-item">
+                <h3>¿Los seguros de salud internacional cubren enfermedades preexistentes?</h3>
+                <p>Depende del plan y la compañía. Algunas pólizas de salud internacional ofrecen cobertura para enfermedades preexistentes después de un período de espera o con un recargo en la prima. En Asistencias y Seguros evaluamos tu caso particular para conseguirte la mejor opción disponible en el mercado.</p>
+            </article>
+            
+            <article class="faq-item">
+                <h3>¿Cómo funciona el reintegro de prima en los seguros de vida?</h3>
+                <p>El seguro de vida a término con reintegro de prima te devuelve el 100% de lo pagado si llegas al final del término del contrato sin haber utilizado la cobertura por fallecimiento. Es como tener protección gratuita durante años y recuperar tu inversión para usarla en tu jubilación o proyectos personales.</p>
+            </article>
+            
+            <article class="faq-item">
+                <h3>¿Puedo contratar un seguro de viaje si ya estoy en el extranjero?</h3>
+                <p>La mayoría de las asistencias en viajes deben contratarse antes de salir de tu país de residencia. Sin embargo, existen algunas opciones para viajeros que ya están fuera. Consulta con nosotros tu situación específica para encontrar la mejor solución.</p>
+            </article>
+            
+            <article class="faq-item">
+                <h3>¿Cuál es la diferencia entre un seguro de viaje y una asistencia en viajes?</h3>
+                <p>El seguro de viaje generalmente reimbolsa gastos médicos después de que ocurre un evento, mientras que la asistencia en viajes te proporciona servicios directos: te consiguen el hospital, coordinan la atención, traducen, gestionan pagos directos y te acompañan durante toda la emergencia. En Asistencias y Seguros trabajamos con planes que combinan ambos beneficios.</p>
+            </article>
+            
+            <article class="faq-item">
+                <h3>¿Los seguros internacionales son válidos para residentes en Venezuela?</h3>
+                <p>Sí, absolutamente. Los seguros de salud internacional y vida que ofrecemos están diseñados específicamente para residentes venezolanos que desean protección global. Puedes vivir en Barquisimeto y tener cobertura en las mejores clínicas de Miami, Madrid o cualquier ciudad del mundo.</p>
+            </article>
+            
+            <article class="faq-item">
+                <h3>¿Cuánto cuesta un seguro de viaje?</h3>
+                <p>El costo depende de tu edad, destino, duración del viaje y coberturas seleccionadas. Contamos con planes accesibles a partir de $3 por día para coberturas básicas, hasta opciones premium con mayores beneficios. Usa nuestro cotizador online o contáctanos para una evaluación personalizada sin compromiso.</p>
+            </article>
+            
+            <article class="faq-item">
+                <h3>¿Qué documentación necesito para contratar un seguro?</h3>
+                <p>Para seguros de viaje solo necesitas tu pasaporte o cédula de identidad. Para seguros de salud internacional o vida, requerimos información médica básica (cuestionario de salud) y en algunos casos exámenes médicos según la edad y el monto de cobertura solicitado.</p>
+            </article>
+        </div>
+    </section>
+
+    <!-- Reclutamiento -->
+    <section class="reclutamiento" id="reclutamiento">
+        <div class="container">
+            <div class="section-title">
+                <h2>Únete a Nuestro Equipo de Agentes de Seguros</h2>
+                <p>¿Te apasiona ayudar a las personas a proteger lo que más valoran? En Asistencias y Seguros buscamos agentes emprendedores, proactivos y con ganas de crecer profesionalmente en el mundo de los seguros. Ofrecemos capacitación continua, comisiones atractivas y la oportunidad de construir tu propio negocio.</p>
+            </div>
+            
+            <div class="formulario-container">
+                <form action="https://formsubmit.co/asistenciasyseguros1@gmail.com" method="POST" enctype="multipart/form-data">
+                    <!-- Configuración de FormSubmit -->
+                    <input type="hidden" name="_subject" value="Nueva Solicitud de Agente - Asistencias y Seguros">
+                    <input type="hidden" name="_next" value="https://asistenciasyseguros.com/gracias.html">
+                    <input type="hidden" name="_captcha" value="false">
+                    
+                    <div class="form-group">
+                        <label for="nombre">Nombre Completo *</label>
+                        <input type="text" id="nombre" name="nombre" required placeholder="Ingresa tu nombre completo">
+                    </div>
+                    
+                    <div class="form-group">
+                        <label for="email">Correo Electrónico *</label>
+                        <input type="email" id="email" name="email" required placeholder="tuemail@ejemplo.com">
+                    </div>
+                    
+                    <div class="form-group">
+                        <label for="telefono">Teléfono / WhatsApp *</label>
+                        <input type="tel" id="telefono" name="telefono" required placeholder="0412-1234567">
+                    </div>
+                    
+                    <div class="form-group">
+                        <label for="ciudad">Ciudad de Residencia *</label>
+                        <input type="text" id="ciudad" name="ciudad" required placeholder="Ej: Barquisimeto, Caracas, Valencia...">
+                    </div>
+                    
+                    <div class="form-group">
+                        <label for="experiencia">¿Tienes experiencia en ventas o seguros? *</label>
+                        <select id="experiencia" name="experiencia" required>
+                            <option value="">Selecciona una opción</option>
+                            <option value="si-ventas">Sí, en ventas</option>
+                            <option value="si-seguros">Sí, en seguros</option>
+                            <option value="ambas">Sí, en ambas áreas</option>
+                            <option value="no">No tengo experiencia pero quiero aprender</option>
+                        </select>
+                    </div>
+                    
+                    <div class="form-group">
+                        <label for="motivacion">¿Por qué quieres ser agente de seguros? *</label>
+                        <textarea id="motivacion" name="motivacion" rows="4" required placeholder="Cuéntanos tus motivaciones y objetivos profesionales..."></textarea>
+                    </div>
+                    
+                    <div class="form-group">
+                        <label for="cv">Adjunta tu CV (opcional)</label>
+                        <input type="file" id="cv" name="cv" accept=".pdf,.doc,.docx">
+                    </div>
+                    
+                    <div class="form-group">
+                        <label for="mensaje">Mensaje Adicional</label>
+                        <textarea id="mensaje" name="mensaje" rows="3" placeholder="Cualquier otra información que quieras compartir..."></textarea>
+                    </div>
+                    
+                    <button type="submit" class="btn-submit">Enviar Solicitud de Incorporación</button>
+                    
+                    <p style="margin-top: 1rem; text-align: center; color: var(--gris-oscuro); font-size: 0.9rem;">
+                        Al enviar este formulario, aceptas ser contactado por nuestro equipo de reclutamiento.
+                    </p>
+                </form>
+            </div>
+        </div>
+    </section>
+
+    <!-- WhatsApp Float Button -->
+    <a href="https://wa.me/584222747836" target="_blank" rel="noopener noreferrer" class="whatsapp-float" aria-label="Contáctanos por WhatsApp">
+        <svg width="35" height="35" viewBox="0 0 24 24" fill="white" xmlns="http://www.w3.org/2000/svg">
+            <path d="M17.472 14.382c-.297-.149-1.758-.867-2.03-.967-.273-.099-.471-.148-.67.15-.197.297-.767.966-.94 1.164-.173.199-.347.223-.644.075-.297-.15-1.255-.463-2.39-1.475-.883-.788-1.48-1.761-1.653-2.059-.173-.297-.018-.458.13-.606.134-.133.298-.347.446-.52.149-.174.198-.298.298-.497.099-.198.05-.371-.025-.52-.075-.149-.669-1.612-.916-2.207-.242-.579-.487-.5-.669-.51-.173-.008-.371-.01-.57-.01-.198 0-.52.074-.792.372-.272.297-1.04 1.016-1.04 2.479 0 1.462 1.065 2.875 1.213 3.074.149.198 2.096 3.2 5.077 4.487.709.306 1.262.489 1.694.625.712.227 1.36.195 1.871.118.571-.085 1.758-.719 2.006-1.413.248-.694.248-1.289.173-1.413-.074-.124-.272-.198-.57-.347m-5.421 7.403h-.004a9.87 9.87 0 01-5.031-1.378l-.361-.214-3.741.982.998-3.648-.235-.374a9.86 9.86 0 01-1.51-5.26c.001-5.45 4.436-9.884 9.888-9.884 2.64 0 5.122 1.03 6.988 2.898a9.825 9.825 0 012.893 6.994c-.003 5.45-4.437 9.884-9.885 9.884m8.413-18.297A11.815 11.815 0 0012.05 0C5.495 0 .16 5.335.157 11.892c0 2.096.547 4.142 1.588 5.945L.057 24l6.305-1.654a11.882 11.882 0 005.683 1.448h.005c6.554 0 11.89-5.335 11.893-11.893a11.821 11.821 0 00-3.48-8.413Z"/>
+        </svg>
+    </a>
+
+    <!-- Footer -->
+    <footer>
+        <div class="footer-container">
+            <div class="footer-section">
+                <h3>Asistencias y Seguros</h3>
+                <p>Tu agencia de confianza en Barquisimeto con más de 40 años protegiendo familias venezolanas. Especialistas en seguros de viaje, salud internacional y vida con reintegro de prima.</p>
+                <p><strong>Siéntete bien asistido</strong></p>
+            </div>
+            
+            <div class="footer-section">
+                <h3>Información de Contacto</h3>
+                <p> Dirección:<br>
+                Urbanización Nueva Segovia, Carrera 6<br>
+                Barquisimeto, Estado Lara, Venezuela</p>
+                
+                <p>📞 Teléfonos:<br>
+                <a href="tel:+584222747836">+58 422-2747836</a> (Llamadas y WhatsApp)</p>
+                
+                <p>📧 Correo Electrónico:<br>
+                <a href="mailto:asistenciasyseguros1@gmail.com">asistenciasyseguros1@gmail.com</a></p>
+            </div>
+            
+            <div class="footer-section">
+                <h3>Síguenos en Redes Sociales</h3>
+                <p>Conéctate con nosotros para recibir consejos de viaje, información sobre seguros y promociones especiales:</p>
+                <div class="social-links">
+                    <a href="https://www.instagram.com/asistencias_y_seguros/" target="_blank" rel="noopener noreferrer" aria-label="Instagram">
+                        <svg width="20" height="20" viewBox="0 0 24 24" fill="white"><path d="M12 2.163c3.204 0 3.584.012 4.85.07 3.252.148 4.771 1.691 4.919 4.919.058 1.265.069 1.645.069 4.849 0 3.205-.012 3.584-.069 4.849-.149 3.225-1.664 4.771-4.919 4.919-1.266.058-1.644.07-4.85.07-3.204 0-3.584-.012-4.849-.07-3.26-.149-4.771-1.699-4.919-4.92-.058-1.265-.07-1.644-.07-4.849 0-3.204.013-3.583.07-4.849.149-3.227 1.664-4.771 4.919-4.919 1.266-.057 1.645-.069 4.849-.069zm0-2.163c-3.259 0-3.667.014-4.947.072-4.358.2-6.78 2.618-6.98 6.98-.059 1.281-.073 1.689-.073 4.948 0 3.259.014 3.668.072 4.948.2 4.358 2.618 6.78 6.98 6.98 1.281.058 1.689.072 4.948.072 3.259 0 3.668-.014 4.948-.072 4.354-.2 6.782-2.618 6.979-6.98.059-1.28.073-1.689.073-4.948 0-3.259-.014-3.667-.072-4.947-.196-4.354-2.617-6.78-6.979-6.98-1.281-.059-1.69-.073-4.949-.073zm0 5.838c-3.403 0-6.162 2.759-6.162 6.162s2.759 6.163 6.162 6.163 6.162-2.759 6.162-6.163c0-3.403-2.759-6.162-6.162-6.162zm0 10.162c-2.209 0-4-1.79-4-4 0-2.209 1.791-4 4-4s4 1.791 4 4c0 2.21-1.791 4-4 4zm6.406-11.845c-.796 0-1.441.645-1.441 1.44s.645 1.44 1.441 1.44c.795 0 1.439-.645 1.439-1.44s-.644-1.44-1.439-1.44z"/></svg>
+                    </a>
+                    <a href="https://www.facebook.com/profile.php?id=61552009109532" target="_blank" rel="noopener noreferrer" aria-label="Facebook">
+                        <svg width="20" height="20" viewBox="0 0 24 24" fill="white"><path d="M24 12.073c0-6.627-5.373-12-12-12s-12 5.373-12 12c0 5.99 4.388 10.954 10.125 11.854v-8.385H7.078v-3.47h3.047V9.43c0-3.007 1.792-4.669 4.533-4.669 1.312 0 2.686.235 2.686.235v2.953H15.83c-1.491 0-1.956.925-1.956 1.874v2.25h3.328l-.532 3.47h-2.796v8.385C19.612 23.027 24 18.062 24 12.073z"/></svg>
+                    </a>
+                    <a href="https://www.linkedin.com/in/asistencias-y-seguros-2948412bb/" target="_blank" rel="noopener noreferrer" aria-label="LinkedIn">
+                        <svg width="20" height="20" viewBox="0 0 24 24" fill="white"><path d="M20.447 20.452h-3.554v-5.569c0-1.328-.027-3.037-1.852-3.037-1.853 0-2.136 1.445-2.136 2.939v5.667H9.351V9h3.414v1.561h.046c.477-.9 1.637-1.85 3.37-1.85 3.601 0 4.267 2.37 4.267 5.455v6.286zM5.337 7.433c-1.144 0-2.063-.926-2.063-2.065 0-1.138.92-2.063 2.063-2.063 1.14 0 2.064.925 2.064 2.063 0 1.139-.925 2.065-2.064 2.065zm1.782 13.019H3.555V9h3.564v11.452zM22.225 0H1.771C.792 0 0 .774 0 1.729v20.542C0 23.227.792 24 1.771 24h20.451C23.2 24 24 23.227 24 22.271V1.729C24 .774 23.2 0 22.222 0h.003z"/></svg>
+                    </a>
+                    <a href="https://asistenciasyseguros.blogspot.com/p/contacto.html" target="_blank" rel="noopener noreferrer" aria-label="Blog">
+                        <svg width="20" height="20" viewBox="0 0 24 24" fill="white"><path d="M12 2C6.48 2 2 6.48 2 12s4.48 10 10 10 10-4.48 10-10S17.52 2 12 2zm-1 17.93c-3.95-.49-7-3.85-7-7.93 0-.62.08-1.21.21-1.79L9 15v1c0 1.1.9 2 2 2v1.93zm6.9-2.54c-.26-.81-1-1.39-1.9-1.39h-1v-3c0-.55-.45-1-1-1H8v-2h2c.55 0 1-.45 1-1V7h2c1.1 0 2-.9 2-2v-.41c2.93 1.19 5 4.06 5 7.41 0 2.08-.8 3.97-2.1 5.39z"/></svg>
+                    </a>
+                </div>
+            </div>
+            
+            <div class="footer-section">
+                <h3>Enlaces Rápidos</h3>
+                <ul>
+                    <li><a href="https://newtravelassistance.page/A343799" target="_blank" rel="noopener noreferrer">Cotizar Seguro de Viaje</a></li>
+                    <li><a href="https://asistenciasyseguros.blogspot.com/" target="_blank" rel="noopener noreferrer">Nuestro Blog</a></li>
+                    <li><a href="#productos">Productos y Servicios</a></li>
+                    <li><a href="#reclutamiento">Trabaja con Nosotros</a></li>
+                </ul>
+            </div>
+        </div>
+        
+        <div class="footer-bottom">
+            <p>&copy; 2026 Asistencias y Seguros. Todos los derechos reservados. | RIF: J-XXXXXXXX-X</p>
+            <p style="margin-top: 0.5rem; font-size: 0.9rem;">Barquisimeto, Estado Lara, Venezuela</p>
+        </div>
+    </footer>
+
+    <!-- Schema.org markup para SEO -->
+    <script type="application/ld+json">
+    {
+        "@context": "https://schema.org",
+        "@type": "InsuranceAgency",
+        "name": "Asistencias y Seguros",
+        "description": "Agencia de seguros de viaje, salud internacional y vida con reintegro de prima en Barquisimeto, Venezuela",
+        "url": "https://asistenciasyseguros.com",
+        "logo": "https://asistenciasyseguros.com/logo.png",
+        "telephone": "+58-422-2747836",
+        "email": "asistenciasyseguros1@gmail.com",
+        "address": {
+            "@type": "PostalAddress",
+            "streetAddress": "Urbanización Nueva Segovia, Carrera 6",
+            "addressLocality": "Barquisimeto",
+            "addressRegion": "Lara",
+            "addressCountry": "VE"
+        },
+        "geo": {
+            "@type": "GeoCoordinates",
+            "latitude": "10.0647",
+            "longitude": "-69.3570"
+        },
+        "openingHours": "Mo-Fr 08:00-17:00",
+        "sameAs": [
+            "https://www.instagram.com/asistencias_y_seguros/",
+            "https://www.facebook.com/profile.php?id=61552009109532",
+            "https://www.linkedin.com/in/asistencias-y-seguros-2948412bb/"
+        ],
+        "founder": {
+            "@type": "Person",
+            "name": "Asistencias y Seguros"
+        }
+    }
+    </script>
+
+    <script>
+        // Smooth scroll para los enlaces de navegación
+        document.querySelectorAll('a[href^="#"]').forEach(anchor => {
+            anchor.addEventListener('click', function (e) {
+                e.preventDefault();
+                const target = document.querySelector(this.getAttribute('href'));
+                if (target) {
+                    target.scrollIntoView({
+                        behavior: 'smooth',
+                        block: 'start'
+                    });
+                }
+            });
+        });
+
+        // Animación simple al hacer scroll
+        const observerOptions = {
+            threshold: 0.1,
+            rootMargin: '0px 0px -50px 0px'
+        };
+
+        const observer = new IntersectionObserver(function(entries) {
+            entries.forEach(entry => {
+                if (entry.isIntersecting) {
+                    entry.target.style.opacity = '1';
+                    entry.target.style.transform = 'translateY(0)';
+                }
+            });
+        }, observerOptions);
+
+        // Observar elementos para animar
+        document.querySelectorAll('.producto-card, .empresa-card, .faq-item').forEach(el => {
+            el.style.opacity = '0';
+            el.style.transform = 'translateY(20px)';
+            el.style.transition = 'opacity 0.6s ease-out, transform 0.6s ease-out';
+            observer.observe(el);
+        });
+    </script>
+</body>
+</html>
